@@ -13,7 +13,7 @@
           <div class="event">
             <div class="content">
               <div class="summary">
-                 <em><%= message.user.username %></em>: <%= message.body %>
+                 <em><%= message.user.username %></em>: <%= message.body%>
               </div>
             </div>
           </div>
@@ -24,11 +24,13 @@
         <div class="ui form">
           <div class="field">
             <div class="ui input focus">
-              <input type="text" placeholder="Search...">
-              <button class="ui right labeled icon button">
-                <i class="right arrow icon"></i>
-                Reply
-              </button>
+              <%= form_with scope: :message, url: messages_path, local: true do |f|%>
+                <%= f.text_field :body %>
+
+                <%= f.button "Reply", class: 'ui right labeled icon button' do %>
+                  Submit for Approval <i class="right arrow icon"></i>
+                <% end%>
+              <% end %>
             </div>
           </div>
         </div>
