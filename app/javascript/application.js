@@ -6,4 +6,6 @@ import "jquery"
 import "semantic-ui"
 
 $(document).ready(function(){
-  $('.ui.accordion').accordion()});
+  $('.ui.accordion').accordion()
+  $('.ui.dropdown').dropdown()
+});
