@@ -1,0 +1,47 @@
+[33mcommit c5a105cc0eccf9e234b1e6f3fef24fdd4703aa76[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Zak <zakaria.saighi@gmail.com>
+Date:   Fri Sep 16 23:38:15 2022 +0200
+
+    Session controller set up
+
+[33mcommit 65e77a53de4cdc302db18d1a0d8b0b13ab7106b8[m
+Author: Zak <zakaria.saighi@gmail.com>
+Date:   Fri Sep 16 20:56:26 2022 +0200
+
+    Show messages
+
+[33mcommit 6385b08d892d41136e371c17f9c7d7b43e14554b[m
+Author: Zak <zakaria.saighi@gmail.com>
+Date:   Fri Sep 16 20:27:06 2022 +0200
+
+    Adding message ressource
+
+[33mcommit 05d85d116273ec11490ebfbbfbedad6b23562fc5[m[33m ([m[1;32mcreate-user-table-model[m[33m)[m
+Author: Zak <zakaria.saighi@gmail.com>
+Date:   Fri Sep 16 19:49:17 2022 +0200
+
+    Add users table and user model
+
+[33mcommit f42ec27824c8f434c00ee169078ccacbcd1bd67e[m
+Author: Zak <zakaria.saighi@gmail.com>
+Date:   Fri Sep 16 12:33:14 2022 +0200
+
+    Adding favicon
+
+[33mcommit d5c97d4e658bc8eb1ebfa13a408bbca618c0ca29[m
+Author: Zak <zakaria.saighi@gmail.com>
+Date:   Fri Sep 16 09:55:08 2022 +0200
+
+    Adding Semantic UI SCSS
+
+[33mcommit 8e5b832297abe82662e54ece3cd7751b085dfd93[m
+Author: Zak <zakaria.saighi@gmail.com>
+Date:   Fri Sep 16 09:26:47 2022 +0200
+
+    Set up sessions and chatroom
+
+[33mcommit 42d8d7ef9e525f3da380ba232992bed4a84f092a[m
+Author: Zak <zakaria.saighi@gmail.com>
+Date:   Thu Sep 15 20:19:16 2022 +0200
+
+    Initial Commit
