@@ -23,16 +23,16 @@
         </div>
       </div>
       <div class="extra content">
-        <div class="ui form">
-          <div class="field">
-            <div class="ui input focus">
-              <%= form_for (@message) do |f|%>
+        <%= form_for(@message, html: {class: "ui reply form", role: "form"}, url: message_path, remote: true) do |f| %>
+          <div class="ui form">
+            <div class="field">
+              <div class="ui input focus">
                 <%= f.text_field :body %>
-                <%= f.submit "Reply", class: 'ui right labeled icon button' %>
-              <% end %>
+                <%= f.button '<i class="bordered inverted orange edit icon"></i>'.html_safe %>
+              </div>
             </div>
           </div>
-        </div>
+        <% end%>
       </div>
     </div>
   </div>
