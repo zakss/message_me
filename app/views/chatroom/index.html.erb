@@ -1,9 +1,11 @@
 
 <h2 class="ui center aligned icon header">
   <i class="circular red coffee icon"></i>
-  Let's talk, <%= current_user.username %>
+  Let's talk
 </h2>
+<div class="">
 
+</div>
 <div class="ui grid">
   <div class="twelve wide column">
     <div class="ui fluid raised card chatbox">
@@ -24,12 +26,9 @@
         <div class="ui form">
           <div class="field">
             <div class="ui input focus">
-              <%= form_with scope: :message, url: messages_path, local: true do |f|%>
+              <%= form_for (@message) do |f|%>
                 <%= f.text_field :body %>
-
-                <%= f.button "Reply", class: 'ui right labeled icon button' do %>
-                  Submit for Approval <i class="right arrow icon"></i>
-                <% end%>
+                <%= f.submit "Reply", class: 'ui right labeled icon button' %>
               <% end %>
             </div>
           </div>
