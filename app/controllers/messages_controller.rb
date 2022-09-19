@@ -2,13 +2,11 @@ class MessagesController < ApplicationController
   before_action :require_user
 
   def create
-    #@message = current_user.messages.build(message_params)
+    message = current_user.messages.build(message_params)
 
-    @message = Message.new(message_params)
-    @message.user = current_user
-
-    if @message.save
-      redirect_to root_path
+    if message.save
+      ActionCable.server.broadcast("chatroom_channel",
+                                    {mod_message: message_render(message)})
     end
   end
 
@@ -19,7 +17,7 @@ class MessagesController < ApplicationController
   end
 
   def message_render(message)
-
+    render(partial: 'message', locals: {message: message})
   end
 
 end
