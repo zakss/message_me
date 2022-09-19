@@ -8,10 +8,7 @@ class MessagesController < ApplicationController
     @message.user = current_user
 
     if @message.save
-      flash[:success] = "New message"
       redirect_to root_path
-    else
-      flash[:error] = "Error"
     end
   end
 

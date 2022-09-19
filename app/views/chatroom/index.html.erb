@@ -3,9 +3,7 @@
   <i class="circular red coffee icon"></i>
   Let's talk
 </h2>
-<div class="">
 
-</div>
 <div class="ui grid">
   <div class="twelve wide column">
     <div class="ui fluid raised card chatbox">
@@ -28,7 +26,7 @@
             <div class="field">
               <div class="ui input focus">
                 <%= f.text_field :body %>
-                <%= f.button '<i class="bordered inverted orange edit icon"></i>'.html_safe %>
+                <%= f.button 'Reply <i class="orange edit icon"></i>'.html_safe %>
               </div>
             </div>
           </div>
@@ -40,15 +38,12 @@
     <div class="ui fluid raised card chatbox">
       <div class="content">
         <div class="ui secondary vertical menu">
-          <a class="active item">
-            Account
-          </a>
-          <a class="item">
+          <p class="item">
             Settings
-          </a>
-          <a class="item">
+          </p>
+          <p class="item">
             Settings
-          </a>
+          </p>
         </div>
       </div>
     </div>
